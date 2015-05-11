@@ -11,7 +11,8 @@ import UIKit
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var movieTable: UITableView!
-    //@IBOutlet weak var bannerView: UIView!
+    
+    @IBOutlet weak var bannerView: UIView!
     @IBOutlet weak var searchBar: UISearchBar!
 
     
@@ -24,7 +25,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //bannerView.hidden = true
+        bannerView.hidden = true
         
         self.movieTable.delegate = self
         self.movieTable.dataSource = self
@@ -50,6 +51,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         var search = self.searchBar
         search.barStyle = UIBarStyle.Black
         search.tintColor = UIColor.whiteColor()
+        search.autocapitalizationType = .None
     }
 
     override func didReceiveMemoryWarning() {
@@ -93,7 +95,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let url = NSURL(string:"https://gist.githubusercontent.com/timothy1ee/d1778ca5b944ed974db0/raw/489d812c7ceeec0ac15ab77bf7c47849f2d1eb2b/gistfile1.json")
         let request = NSURLRequest(URL: url!)
         
-        // bannerView.hidden = true
+        bannerView.hidden = true
         
         if showLoadingSpinner {
             MBProgressHUD.showHUDAddedTo(self.view, animated: true)
@@ -127,7 +129,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     func displayError(message: String) {
         println(message)
-        // bannerView.hidden = false
+        bannerView.hidden = false
     }
     
     func onRefresh(sender: AnyObject) {
@@ -163,7 +165,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         movieTable.reloadData()
     }
-
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let cell = sender as! UITableViewCell
         let indexPath = movieTable.indexPathForCell(cell)!
