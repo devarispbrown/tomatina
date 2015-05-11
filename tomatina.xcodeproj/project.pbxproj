@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5261778A1AFD4D5200F4B34D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526177891AFD4D5200F4B34D /* AppDelegate.swift */; };
-		5261778C1AFD4D5200F4B34D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261778B1AFD4D5200F4B34D /* ViewController.swift */; };
 		5261778F1AFD4D5200F4B34D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5261778D1AFD4D5200F4B34D /* Main.storyboard */; };
 		526177911AFD4D5200F4B34D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526177901AFD4D5200F4B34D /* Images.xcassets */; };
 		526177941AFD4D5200F4B34D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526177921AFD4D5200F4B34D /* LaunchScreen.xib */; };
 		526177A01AFD4D5200F4B34D /* tomatinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261779F1AFD4D5200F4B34D /* tomatinaTests.swift */; };
+		52FCBA161AFD56EB00E18E99 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCBA151AFD56EB00E18E99 /* MoviesViewController.swift */; };
+		52FCBA191AFE902E00E18E99 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCBA181AFE902E00E18E99 /* MovieTableViewCell.swift */; };
+		52FCBA201AFEA31200E18E99 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCBA1F1AFEA31200E18E99 /* MovieDetailsViewController.swift */; };
+		5362CC77CF9918BB72A697BD /* libPods-tomatina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9183AA10F682F426B457E13 /* libPods-tomatina.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +29,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38AE4692C70538403F96003E /* Pods-tomatina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tomatina.release.xcconfig"; path = "Pods/Target Support Files/Pods-tomatina/Pods-tomatina.release.xcconfig"; sourceTree = "<group>"; };
 		526177841AFD4D5200F4B34D /* tomatina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tomatina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526177881AFD4D5200F4B34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526177891AFD4D5200F4B34D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5261778B1AFD4D5200F4B34D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5261778E1AFD4D5200F4B34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		526177901AFD4D5200F4B34D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		526177931AFD4D5200F4B34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		526177991AFD4D5200F4B34D /* tomatinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tomatinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5261779E1AFD4D5200F4B34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5261779F1AFD4D5200F4B34D /* tomatinaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tomatinaTests.swift; sourceTree = "<group>"; };
+		52FCBA151AFD56EB00E18E99 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		52FCBA181AFE902E00E18E99 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		52FCBA1B1AFE9DA700E18E99 /* tomatina-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tomatina-Bridging-Header.h"; sourceTree = "<group>"; };
+		52FCBA1F1AFEA31200E18E99 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		5C04DD5BCD8EDCBA3796ADA5 /* Pods-tomatina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tomatina.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tomatina/Pods-tomatina.debug.xcconfig"; sourceTree = "<group>"; };
+		D9183AA10F682F426B457E13 /* libPods-tomatina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tomatina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5362CC77CF9918BB72A697BD /* libPods-tomatina.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +66,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E46DD8A44ACCD4DE1532F0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C04DD5BCD8EDCBA3796ADA5 /* Pods-tomatina.debug.xcconfig */,
+				38AE4692C70538403F96003E /* Pods-tomatina.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		21ADE8487020B4B741F633F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9183AA10F682F426B457E13 /* libPods-tomatina.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5261777B1AFD4D5200F4B34D = {
 			isa = PBXGroup;
 			children = (
 				526177861AFD4D5200F4B34D /* tomatina */,
 				5261779C1AFD4D5200F4B34D /* tomatinaTests */,
 				526177851AFD4D5200F4B34D /* Products */,
+				1E46DD8A44ACCD4DE1532F0D /* Pods */,
+				21ADE8487020B4B741F633F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +107,13 @@
 			isa = PBXGroup;
 			children = (
 				526177891AFD4D5200F4B34D /* AppDelegate.swift */,
-				5261778B1AFD4D5200F4B34D /* ViewController.swift */,
 				5261778D1AFD4D5200F4B34D /* Main.storyboard */,
 				526177901AFD4D5200F4B34D /* Images.xcassets */,
 				526177921AFD4D5200F4B34D /* LaunchScreen.xib */,
 				526177871AFD4D5200F4B34D /* Supporting Files */,
+				52FCBA171AFD576E00E18E99 /* View Controllers */,
+				52FCBA1A1AFE903600E18E99 /* Views */,
+				52FCBA1B1AFE9DA700E18E99 /* tomatina-Bridging-Header.h */,
 			);
 			path = tomatina;
 			sourceTree = "<group>";
@@ -112,6 +143,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		52FCBA171AFD576E00E18E99 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				52FCBA151AFD56EB00E18E99 /* MoviesViewController.swift */,
+				52FCBA1F1AFEA31200E18E99 /* MovieDetailsViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		52FCBA1A1AFE903600E18E99 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52FCBA181AFE902E00E18E99 /* MovieTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 526177A31AFD4D5200F4B34D /* Build configuration list for PBXNativeTarget "tomatina" */;
 			buildPhases = (
+				471E1A75D041B062EFDB4DBF /* Check Pods Manifest.lock */,
 				526177801AFD4D5200F4B34D /* Sources */,
 				526177811AFD4D5200F4B34D /* Frameworks */,
 				526177821AFD4D5200F4B34D /* Resources */,
+				36B97FC63487011CED9B8C16 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,13 +257,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36B97FC63487011CED9B8C16 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tomatina/Pods-tomatina-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		471E1A75D041B062EFDB4DBF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		526177801AFD4D5200F4B34D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5261778C1AFD4D5200F4B34D /* ViewController.swift in Sources */,
+				52FCBA201AFEA31200E18E99 /* MovieDetailsViewController.swift in Sources */,
 				5261778A1AFD4D5200F4B34D /* AppDelegate.swift in Sources */,
+				52FCBA161AFD56EB00E18E99 /* MoviesViewController.swift in Sources */,
+				52FCBA191AFE902E00E18E99 /* MovieTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,21 +423,28 @@
 		};
 		526177A41AFD4D5200F4B34D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C04DD5BCD8EDCBA3796ADA5 /* Pods-tomatina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = tomatina/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tomatina/tomatina-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		526177A51AFD4D5200F4B34D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38AE4692C70538403F96003E /* Pods-tomatina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = tomatina/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tomatina/tomatina-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +501,7 @@
 				526177A51AFD4D5200F4B34D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		526177A61AFD4D5200F4B34D /* Build configuration list for PBXNativeTarget "tomatinaTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +510,7 @@
 				526177A81AFD4D5200F4B34D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
